@@ -84,7 +84,7 @@
 //
 // humanCount([[2,1],[5,6],[7,9]])
 
-//8
+//// 8
 // function findUniq(arr) {
 //     const bigOne = Math.max(...arr)
 //     const smallOne = Math.min(...arr)
@@ -92,8 +92,43 @@
 //     for (let i=0;i<3;i++){
 //         if (arr[i]===smallOne) forResult.push(arr[i])
 //     }
-//     if (forResult.length>1) return bigOne
-//     return  smallOne
+//     if (forResult.length>1) {console.log(bigOne)}else {
+//     console.log(smallOne)}
+// }
+// findUniq([0,0,0,0,3])
+
+
+// //9
+// function DNAtoRNA(dna) {
+//     let result =[]
+//     for (let i=0;i<dna.length;i++){
+//         if (dna[i]==='T'){ result.push('U')}else {
+//         result.push(dna[i])}
+//     }
+//     return result.join('')
+// }
+// DNAtoRNA("GCAT")
+
+// // 10
+// function towerBuilder(n) {
+//     let arr = []
+//     for (let i=1; i<=n; i++)arr.push(' '.repeat(n-i)+'*'.repeat(i*2-1)+' '.repeat(n-i))
+//     return arr
+// }
+// towerBuilder(10)
+
+// // 11
+// function greet (name, owner) {
+//     if (name===owner) return 'Hello boss'
+//     return 'Hello guest'
 // }
 
-findUniq([0,0,1,0,0])
+// 12
+function findAverage(array) {
+    if (array.length===0) return 0
+    let sum =0
+for (let i=0; i<array.length; i++){sum+=array[i]}
+    return sum/array.length;
+}
+
+findAverage([1,2,3,4,5])
