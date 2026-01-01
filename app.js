@@ -123,12 +123,64 @@
 //     return 'Hello guest'
 // }
 
-// 12
-function findAverage(array) {
-    if (array.length===0) return 0
-    let sum =0
-for (let i=0; i<array.length; i++){sum+=array[i]}
-    return sum/array.length;
-}
+// // 12
+// function findAverage(array) {
+//     if (array.length===0) return 0
+//     let sum =0
+// for (let i=0; i<array.length; i++){sum+=array[i]}
+//     console.log(sum/array.length);
+// }
+//
+// findAverage([-1,2,3,4,5])
 
-findAverage([1,2,3,4,5])
+// // 13
+// function lovefunc(flower1, flower2){
+// return (flower1 + flower2) % 2 == 1;
+// }
+
+
+// // 14
+// // You are going to be given a non-empty string. Your job is to return the middle character(s) of the string.
+// //
+// //     If the string's length is odd, return the middle character.
+// // If the string's length is even, return the middle 2 characters.
+// function getMiddle(s) {
+//      const arr = s.split('')
+//     if (arr.length%2!==0)
+//         return arr[arr.length/2-0.5]
+//         return `${arr[arr.length/2-1]}${arr[arr.length/2]}`
+// }
+// getMiddle('mohina')
+
+// // 15
+// // Make a program that filters a list of strings and returns a list with only your friends name in it.
+// //     If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+// function friend(friends){
+//     const result =[]
+//     for(let i=0; i<friends.length; i++){
+//         if (friends[i].length===4)result.push(friends[i])
+//     }
+//     return result
+// }
+// friend(["Ryan", "Kieran", "Mark"])
+
+// // 16
+// // You get an array of numbers, return the sum of all of the positives ones.
+// function positiveSum(arr) {
+// let sum=0
+//     for (let i=0;i<arr.length; i++){
+//         if (arr[i]>0) sum+=arr[i]
+//     }
+//     return sum
+// }
+// positiveSum([1,2,3,4,5])
+
+// // 17
+// function grow(x){
+//     let result =1
+//     for (let i=0; i<x.length; i++){ result*=x[i]}
+//     return result
+// }
+// grow([1, 2, 3])
+
+
