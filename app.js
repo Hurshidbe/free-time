@@ -183,4 +183,44 @@
 // }
 // grow([1, 2, 3])
 
+// // 18
+// // Ben has a very simple idea to make some profit: he buys something and sells it again.Of course,
+// //     this wouldn't give him any profit at all if he was simply to buy and sell it at the same price. Instead,' +
+// // ' he's going to buy it for the lowest possible price and sell it at the highest.
+// function minMax(arr){
+//     return [Math.min(...arr), Math.max(...arr)]
+// }
+
+// // 19
+// function createPhoneNumber(numbers){
+//     return `(${numbers[0]}${numbers[1]}${numbers[2]}) ${numbers[3]}${numbers[4]}${numbers[5]}-${numbers[6]}${numbers[7]}${numbers[8]}${numbers[9]}`
+// }
+
+// // 20
+// // Problem
+// // Your task is to construct a building which will be a pile of n cubes.
+// //     The cube at the bottom will have a volume of n³.
+// // The cube above will have a volume of (n − 1)³.
+// // The next cube will have a volume of (n − 2)³.
+// // And so on, until the top cube which will have a volume of 1³.
+// // You are given the total volume m of the building.
+// //     Given m, can you find the number n of cubes you will have to build?
+// function findNb(m) {
+//     let sum =0;
+//     for (let i=0; i>=0; i++){
+//         sum+=i**3
+//         if (sum===m) return console.log(i)
+//         if (sum>m) return  console.log(-1)
+//     }
+// }
+// findNb(100)
+
+// // 21
+// function sumArray(array) {
+//     if (!array||array.length<3) return 0;
+//     let sum = 0;
+//     for (let i=0; i<array.length; i++) {
+//         sum=sum+array[i]}
+//     return sum-Math.max(...array)-Math.min(...array);
+// }
 
