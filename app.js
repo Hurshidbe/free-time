@@ -224,3 +224,77 @@
 //     return sum-Math.max(...array)-Math.min(...array);
 // }
 
+// // 22
+// function removeExclamationMarks(s) {
+//     let result = []
+//     for(let i=0;i<s.length;i++){
+//        if (s[i]!=='!')result.push(s[i])
+//     }
+//     return  result.join('')
+// }
+//
+// removeExclamationMarks('Hello World!')
+
+// // 23
+// function solution(string) {
+//     let result = []
+//     const lower ='QWERTYUIOPASDFGHJKLZXCVBNM'
+//     for (let i=0; i<string.length; i++){
+//        if (lower.includes(string[i])){
+//            result.push(` ${string[i]}`)
+//            i++}
+//        result.push(string[i])}
+//     return result.join('')
+// }
+// solution('assalomuAlaykum')
+
+//
+//
+// //                                   Event-loop
+// 7 ta:
+// 1.
+// 2. process.emit()
+// 3. synchron - console.log()
+// 4. timeout(() => {}, 0)
+// 5. Promise
+// new Promise((resolve, reject) => {})
+// 6.
+// 7. async await
+
+
+// // 24
+// function isValidWalk(walk) {
+//     if (walk.length!==10) return false
+//     let x=0;
+//     let y=0;
+//     for (let i=0; i<10; i++){
+// if (walk[i]==='n') y=y-1
+// if (walk[i]==='w') x=x-1
+// if (walk[i]==='e') x=x+1
+// if (walk[i]==='s') y=y+1
+//     }
+//     if(x===0 && y===0) return true
+//     return false
+// }
+// isValidWalk(['n','s','n','s','n','s','n','s','n','s'])
+
+// // 25
+// const rps = (p1, p2) => {
+//     if (p1===p2) return "Draw!"
+//     if(p1 === "scissors" && p2=== "paper") return "Player 1 won!"
+//     if(p2 === "scissors" && p1=== "paper") return "Player 2 won!"
+//     if(p1 === "scissors" && p2=== "rock") return "Player 2 won!"
+//     if(p2 === "scissors" && p1=== "rock") return "Player 1 won!"
+//     if(p1 === "paper" && p2=== "rock") return "Player 1 won!"
+//     if(p2 === "paper" && p1=== "rock") return "Player 2 won!"
+// };
+
+// // 26
+// function removeEveryOther(arr){
+//        let result =[]
+//     for (let i=0;i<arr.length;i=i+2){
+//         result.push(arr[i])
+//     }
+//     return result
+// }
+
