@@ -298,3 +298,72 @@
 //     return result
 // }
 
+// // 27
+// function sumMix(x){
+// let result = 0;
+// for (let i=0;i<x.length;i++){
+//     result+=parseInt(x[i])
+// }
+// return result
+// }
+// sumMix([9, 3, '7', '3'])
+
+// // 28
+// function removeSmallest(n) {
+//     let numbers = n
+//     let min= Number.MAX_SAFE_INTEGER
+//     for (const number of numbers){
+//         if (number < min) {
+//             min = number
+//         }
+//     }
+//     const idx = numbers.indexOf(min)
+//     if (idx > -1) {
+//         numbers.splice(idx, 1)
+//     }
+//     return numbers
+// }
+// console.log(removeSmallest([5,3,2,1,1,4, 1]))
+
+// function removeBiggest(numbers){
+//     let max= Number.MAX_SAFE_INTEGER*(-1)
+//     for (const num of numbers){
+//         if (num>max){
+//             max =num
+//         }
+//     }
+//
+//     const index = numbers.indexOf(max)
+//     if(index>=0){
+//         numbers.splice(index, 1)
+//     }
+// return numbers
+// }
+// console.log(removeBiggest([5,1,2,5, 1]))
+
+// // 29
+// function correct(string) {
+//     let result = []
+//     for (let i = 0; i < string.length; i++) {
+//         if (string[i] === '5') {
+//             result.push('S')} else if (string[i] === '0') {
+//             result.push('O')} else if (string[i] === '1') {
+//             result.push('I')} else {
+//             result.push(string[i])}
+//     }
+//     return result.join('')
+// }
+// console.log(correct('L0ND0N'))
+
+// // 30
+// function points(games) {
+//     let score =0
+//     for (let i=0; i<games.length; i++){
+//         if (games[i][0]>games[i][2]) score+=3
+//         else if (games[i][0]===games[i][2]) score+=1
+//     }
+//     return score
+// }
+// points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
+
+// 31
