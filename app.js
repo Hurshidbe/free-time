@@ -366,4 +366,43 @@
 // }
 // points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
 
-// 31
+// // 31
+// function isTriangle(a,b,c)
+// {
+//     if(a<=0 ||c<=0 ||b<=0 ||a+b<=c ||a+c<=b|| b+c<=a) return false
+//     return  true
+// }
+// console.log(isTriangle(3,3,3))
+
+// 32
+// function maxSequence(arr){
+//     if (arr.length===0) return 0
+//     let biggest = -Number.MAX_VALUE
+// for (const index in arr){
+//     let sum =0
+//     for (let i=0; i<=arr.length; i++){
+//         const sliced  = arr.slice(index, i)
+//         let ssum =0
+//         for (let j=0;j<sliced.length;j++){
+//             ssum+=sliced[j]
+//         }
+//         if (ssum>sum) sum=ssum
+//     }
+//     if(sum>biggest) biggest=sum
+// }
+// return biggest
+// }
+//
+// big([-2, 1, -3, 4, -1, 2, 1, -5, 4])
+
+// // 33
+// function dirReduce(arr){
+//     let box =[]
+//     for (let i=0; i<arr.length; i++){
+//         if (arr[i]==='NORTH' && box[box.length-1] ==='SOUTH' ||arr[i]==='SOUTH' && box[box.length-1] ==='NORTH') {box.pop()}
+//         else if (arr[i]==='WEST' && box[box.length-1] ==='EAST' ||arr[i]==='EAST' && box[box.length-1] ==='WEST') {box.pop()}
+//         else {box.push(arr[i])}
+//     }
+// return box
+// }
+// console.log(dirReduce(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]))
