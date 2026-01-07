@@ -406,3 +406,40 @@
 // return box
 // }
 // console.log(dirReduce(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]))
+
+// // 34
+//     let txt = 'FUCK YoU'
+// String.prototype.isUpperCase = function() {
+//     if (this.trim('String: ')===this.toUpperCase()) return true
+//         return false
+// }
+// txt.isUpperCase()
+
+// // 35
+// function findShort(s){
+//     let smallest = Number.MAX_VALUE
+//     for (const word of s.split(' ')){
+//         if (word.length<smallest) smallest=word.length}
+//     return smallest
+// }
+//
+// console.log(findShort('hello all my name is hurshidbek'))
+
+// // 36
+// function countSmileys(arr) {
+//     let count = 0;
+//     for (const value of arr) {
+//         const len = value.length;
+//         if (len !== 2 && len !== 3) continue;
+//         const eyes = value[0];
+//         const nose = len === 3 ? value[1] : '';
+//         const mouth = value[len - 1];
+//         if (
+//             ':;'.includes(eyes) &&
+//             (nose === '' || '-~'.includes(nose)) &&
+//             ')D'.includes(mouth)
+//         ) {count++;}
+//     }
+//     return count;
+// }
+// console.log(countSmileys([":->" , ";~D" , ";-(" , ":~>" , ";o)" , ";->" , ";D"]))
