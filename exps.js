@@ -98,22 +98,24 @@
 
 
 
-var maxSequence = function(arr){
-    var maxSum = 0;
-    var currentSum = 0;
+// var maxSequence = function(arr){
+//     var maxSum = 0;
+//     var currentSum = 0;
+//
+//     for (var i = 0; i < arr.length; i++) {
+//         currentSum += arr[i];
+//
+//         if (currentSum <= 0) {
+//             currentSum = 0;
+//         }
+//         maxSum = Math.max(maxSum, currentSum);
+//         console.log({currentSum, maxSum})
+//
+//     }
+//
+//     return maxSum;
+// }
+//
+// console.log(maxSequence([-2, 1, -3, 4, -1, 2, 1, 5, 4]))
 
-    for (var i = 0; i < arr.length; i++) {
-        currentSum += arr[i];
-
-        if (currentSum <= 0) {
-            currentSum = 0;
-        }
-        maxSum = Math.max(maxSum, currentSum);
-        console.log({currentSum, maxSum})
-
-    }
-
-    return maxSum;
-}
-
-console.log(maxSequence([-2, 1, -3, 4, -1, 2, 1, 5, 4]))
+//should learm map and set

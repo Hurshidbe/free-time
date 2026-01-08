@@ -443,3 +443,68 @@
 //     return count;
 // }
 // console.log(countSmileys([":->" , ";~D" , ";-(" , ":~>" , ";o)" , ";->" , ";D"]))
+
+// 37
+// function order(words){
+//     const arr=words.split(' ')
+//     let result = {}
+//
+//     for (let i=0; i<arr.length; i++) {
+//         const extractedNumber = arr[i].match('/[0-9]/g')
+//         console.log({extractedNumber})
+//     }
+// }
+
+
+// function order(words){
+//     const arr=words.split(' ')
+//     let result = []
+//     for (let i=1; i<=arr.length; i++) {
+//       for (const  value of arr){
+//           if (value.includes(i.toString())) result.push(value)
+//       }
+//     }
+//     // // const resultMap = {
+//     // //     4: '4of',
+//     // //     1: 'Fo1r'
+//     // // }
+//     //
+//     // for (const key in resultMap) {
+//     //     arr[key-1]=resultMap[key]
+//     // }
+//     return result.join(' ')
+// }
+// console.log(order("4of Fo1r pe6ople g3ood th5e the2"))
+
+// // 38
+// function between(a, b) {
+//     if (a>b) return 0
+//     let result =[]
+//     for (let i=a; i<=b; i++){
+//         result.push(i)
+//     }
+//     return  result
+// }
+
+// // 39
+// function average(scores) {
+//     const sum = scores.reduce((a,b)=>a+b)
+//     return Math.round(sum/scores.length)
+// }
+// console.log(average([49,3,5,300,7]))
+
+// // 40
+// function nbDig(n, d) {
+//    const arr = []
+//     let result =0
+//     for (let i=0; i<=n; i++){
+//         arr.push(i**2)
+//     }
+//     const joined =  arr.join('')
+//     for (const char of joined){
+//         if (char==d) result+=1
+//     }
+//     return result
+// }
+// console.log(nbDig(11011, 2))
+
