@@ -508,3 +508,131 @@
 // }
 // console.log(nbDig(11011, 2))
 
+// // 41
+// function sortByLength (array) {
+// return array.sort((a,b)=>a.length-b.length)
+// }
+// console.log(sortByLength(["", "Moderately", "Brains", "Pizza"]))
+
+// // 42
+// function domainName(url) {
+//     if (url.includes('http')){
+//         if (url.includes('www')){
+//             return url.split('/')[2].split('.')[1]
+//         }
+//         return url.split('//')[1].split('.')[0]
+//     }
+//     else if (url.includes('www')){
+//         return url.split('www')[1].split('.')[1]
+//     } else {
+//         return url.split('.')[0]
+//     }
+// }
+// console.log(domainName('dcrt7-o6rvq5-jg76l6utf.io/error'))
+
+// // 43
+// function switchItUp(number){
+// if (number ===1) return 'One'
+// if (number ===2) return 'Two'
+// if (number ===3) return 'Three'
+// if (number ===4) return 'Four'
+// if (number ===5) return 'Five'
+// if (number ===6) return 'Six'
+// if (number ===7) return 'Seven'
+// if (number ===8) return 'Eight'
+// if (number ===9) return 'Nine'
+//     return 'Zero'
+// }
+
+// // 44
+// function isAnagram(t, o) {return t.toUpperCase().split('').sort().join('')===o.toUpperCase().split('').sort().join('')}
+// console.log(isAnagram("you", "yoU"))
+
+// // 45
+// function lastDigit(as){
+//    const firstVal = as[0]%10
+//     const others = []
+//     for (let i=1;i<as.length; i++){
+//         const qoldiq = as[i]%4
+//         if (qoldiq===0) {others.push(4)}else {
+//         others.push(qoldiq)}
+//     }
+//     console.log(others)
+//     const deg = others.reduce((a,b)=>a*b)
+//     min_deg = deg%4
+//     if (min_deg===0) min_deg===4
+//     if (firstVal===0) return 0
+//     return (firstVal**min_deg)
+// }
+// console.log(lastDigit([123235, 69402, 140248]))
+
+// // 46
+// function countChange(money, coins) {
+// coins.sort((a,b)=>a-b)
+//     for (let i=0; i<coins.length; i++){
+//
+//     }
+// }
+// console.log(countChange(300, [5, 10, 20, 50, 100, 200, 500]))
+
+// // 47
+// function longestConsec(strarr, k) {
+//     if (strarr.length === 0 || k > strarr.length || k <= 0) return '';
+//     let longest = ''
+//     for (let i=0; i<strarr.length; i++){
+//         const lenn= strarr.slice(i,(i+k))
+//         if (lenn.join('').length>longest.length) longest=lenn.join('')
+//     }
+//     return longest
+// }
+// console.log(longestConsec(['itwkppvixoyx3452zzzzzzzzzzzz'], ))
+
+// // 48
+// function gooseFilter (birds) {
+//     const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+//     const resul = []
+//     for (const val of birds){
+//         if (!geese.includes(val)) resul.push(val)
+//     }
+//     return resul
+// }
+// console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
+
+
+// 49
+// function feast(beast, dish) {
+//     let a =beast.split('')
+//     let b =dish.split('')
+//     let ar =[]
+//     let br =[]
+//     ar.push(a[0])
+//     ar.push(a[a.length-1])
+//     br.push(b[0])
+//     br.push(b[b.length-1])
+//     return ar.join('')===br.join('')
+// }
+// console.log(feast("great blue herop", "garlic naan"))
+
+// // 50
+// function removeUrlAnchor(url){
+//     return url.split('#')[0]
+// }
+// console.log(removeUrlAnchor('www.codewars.com/katas/?page=1#about'))
+
+// // 51
+// function powersOfTwo(n){const r =[]
+//     for (let i=0; i<=n; i++){r.push(2**i)}return r}
+
+// // 52
+// function maps(x){
+//     return x.map((val)=>val*2)
+// }
+// console.log(maps([1,2,34,5]))
+
+// // 53
+// function findUniq(arr) {
+//     arr.sort((a,b)=>a-b)
+//     if (arr[0]===arr[1]) return arr[arr.length-1]
+//     return arr[0]
+// }
+// console.log(findUniq([1,1,1,1,1,3, 1,1,1,1]))
