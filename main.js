@@ -636,3 +636,81 @@
 //     return arr[0]
 // }
 // console.log(findUniq([1,1,1,1,1,3, 1,1,1,1]))
+
+// // 54
+// function rot13(message){
+//     const uppers='ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+//     const lowers='abcdefghijklmnopqrstuvwxyz'
+//     const result =[]
+//     for (const val of message.split('')){
+//         if (uppers.includes(val)){
+//             for (let i=0; i<26; i++){
+//                 if (val===uppers[i]){
+//                     let index =i+13
+//                     if (index>25)index=index-26
+//                     result.push(uppers[index])
+//                 }
+//             }
+//         }else if (lowers.includes(val)){
+//             for (let i=0; i<26; i++){
+//                 if (val===lowers[i]){
+//                     let index =i+13
+//                     if (index>25)index=index-26
+//                     result.push(lowers[index])
+//                 }
+//
+//             }
+//         }else {
+//             result.push(val)
+//         }
+//     }
+//     return result.join('')
+// }
+// console.log(rot13('Ruby is cool!'))
+
+// // 55
+// function solution(str, ending){
+//     if (str===ending) return true
+//     else if (str.split('').slice(str.length-ending.length, str.length+1).join('')===ending) return true
+//     return false
+// }
+// console.log(solution('hello','lof'))
+
+// // 56
+// function comp(a, b){
+//     if (!a || !b || a.length !== b.length) return false;
+//     let a2=a.sort((a,b)=>a-b).map((num)=>num**2)
+//     let b2= b.sort((a,b)=>a-b)
+//     return a2.join('')===b2.join('')
+// }
+// console.log(comp([1,2,3,4,5],[1,4,9,25,16]))
+
+// // 57
+// function accum(s) {
+//     let result =[]
+//     result.push(s[0].toUpperCase())
+//     for (let i=1; i<s.length;i++){
+//         result.push(`-${s[i].toUpperCase()}${s[i].repeat(i).toLowerCase()}`)}
+//     return result.join('')
+// }
+// console.log(accum('hello'))
+
+// 58
+function diamond(n){
+    if (n%2===0 || n<=0) return null
+    const result =[]
+    for (let i=1;i<=n;i+=2){
+        result.push(`${' '.repeat((n-i)/2)}${'*'.repeat(i)}\n`)
+    }
+    for (let i=n-2;i>=1;i-=2){
+        result.push(`${' '.repeat((n-i)/2)}${'*'.repeat(i)}\n`)
+    }
+    return result.join('')
+}
+console.log(diamond(5))
+
+// 59
+function spiralize (n) {
+    return n[1];
+}
+console.log(spiralize(5))
