@@ -695,22 +695,18 @@
 // }
 // console.log(accum('hello'))
 
-// 58
-function diamond(n){
-    if (n%2===0 || n<=0) return null
-    const result =[]
-    for (let i=1;i<=n;i+=2){
-        result.push(`${' '.repeat((n-i)/2)}${'*'.repeat(i)}\n`)
-    }
-    for (let i=n-2;i>=1;i-=2){
-        result.push(`${' '.repeat((n-i)/2)}${'*'.repeat(i)}\n`)
-    }
-    return result.join('')
-}
-console.log(diamond(5))
+// // 58
+// function diamond(n){
+//     if (n%2===0 || n<=0) return null
+//     const result =[]
+//     for (let i=1;i<=n;i+=2){
+//         result.push(`${' '.repeat((n-i)/2)}${'*'.repeat(i)}\n`)
+//     }
+//     for (let i=n-2;i>=1;i-=2){
+//         result.push(`${' '.repeat((n-i)/2)}${'*'.repeat(i)}\n`)
+//     }
+//     return result.join('')
+// }
+// console.log(diamond(5))
 
 // 59
-function spiralize (n) {
-    return n[1];
-}
-console.log(spiralize(5))
