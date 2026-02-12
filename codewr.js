@@ -709,4 +709,63 @@
 // }
 // console.log(diamond(5))
 
-// 59
+// // 59                                                                             not completed
+// function recoverSecret(triplets) {
+//     const uniqed = triplets.join()
+//     return uniqed.split(',').join('')
+//     // return new Set(uniqed)
+// }
+// console.log(recoverSecret([
+//     ['t','u','p'],
+//     ['w','h','i'],
+//     ['t','s','u'],
+//     ['a','t','s'],
+//     ['h','a','p'],
+//     ['i','s','u']
+// ]))
+
+
+// 60
+// function countOnes(left, right) {
+//     let result = 0
+//     for (let i = left; i<=right; i++){
+//     let son =i
+//     while(son>=1){
+//         if(son%2!==0){
+//             result+=1
+//             son=(son/2 -0.5)
+//         }else {
+//             son= son/2
+//         }
+//     }
+// }
+//     return result
+// }
+// console.log(countOnes(4,7))
+
+// // 61
+// function solution(str) {
+//     let result = []
+//     if (str.length%2!==0) str=str+'_'
+//     for (let i = 0; i<str.length; i+=2){
+//         const duos =(str[i]+str[i+1])
+//         result.push(duos)
+//     }
+//     return result
+// }
+// console.log(solution('hello'))
+
+// // 62
+// function finance(n) {
+//     return (n*(n+1)*(n+2))/2;
+// }
+
+// // 63
+// function toFreud(txt) {
+//   if(!txt) return ''
+//     const splitted =  txt.split(' ')
+//   const result =[]
+//   for(word of splitted){result.push('sex')}
+//   return result.join(' ')
+// }
+// console.log(toFreud('cd htr thr'))
