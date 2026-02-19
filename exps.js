@@ -253,62 +253,62 @@ products.set('Orifjon', {'age' : 27, 'height' : 174})
 //
 // console.log(numbers.reduce((a,b)=>a+b))
 
-const array = [
-    [1,2,3,4,5],
-    [4,5,6,6,7],
-    [7,8,9,7,8],
-    [1,2,4,6,0],
-    [7,1,8,0,9],
-]
+// const array = [
+//     [1,2,3,4,5],
+//     [4,5,6,6,7],
+//     [7,8,9,7,8],
+//     [1,2,4,6,0],
+//     [7,1,8,0,9],
+// ]
 
-const result = []
+// const result = []
 
-for (let x = 0; x < array.length; x++) {
-    for (let y = 0; y < array[x].length; y++) {
-        // right
-        if (x === 0) {
-            result.push(array[x][y])
-        }
+// for (let x = 0; x < array.length; x++) {
+//     for (let y = 0; y < array[x].length; y++) {
+//         // right
+//         if (x === 0) {
+//             result.push(array[x][y])
+//         }
 
-        // left
-        if ((x === array.length - 1)) {
-            result.push(array[x][array.length - 1])
-        }
+//         // left
+//         if ((x === array.length - 1)) {
+//             result.push(array[x][array.length - 1])
+//         }
 
-        if ((x !== 0) && (x !== array.length - 1)) {
-            result.push(array[x][array.length - 1-y])
-        }
+//         if ((x !== 0) && (x !== array.length - 1)) {
+//             result.push(array[x][array.length - 1-y])
+//         }
 
-    }
-
-
-    // down
-    if ((x !== 0) && (x !== array.length - 1)) {
-        result.push(array[x][array.length - 1])
-    }
+//     }
 
 
-    //up
-    if ((x !== 0) && (x !== array.length - 1)) {
-        result.push(array[array.length - 1 - x][x])
-    }
-}
-
-console.log(result)
+//     // down
+//     if ((x !== 0) && (x !== array.length - 1)) {
+//         result.push(array[x][array.length - 1])
+//     }
 
 
-@Get('/api/books')
-export class getbooks() {
-    const start = Date.now()
-    await bookservice.getbook(filter);
-    console.log(Date.now() - start)
-    retrun
-}
+//     //up
+//     if ((x !== 0) && (x !== array.length - 1)) {
+//         result.push(array[array.length - 1 - x][x])
+//     }
+// }
 
-@Get('/api/books-cached')
-export class getbooks() {
-    redis
-    // await bookservice.getbook(filter);
-    // retrun
-}
+// console.log(result)
+
+
+// @Get('/api/books')
+// export class getbooks() {
+//     const start = Date.now()
+//     await bookservice.getbook(filter);
+//     console.log(Date.now() - start)
+//     retrun
+// }
+
+// @Get('/api/books-cached')
+// export class getbooks() {
+//     redis
+//     // await bookservice.getbook(filter);
+//     // retrun
+// }
 
