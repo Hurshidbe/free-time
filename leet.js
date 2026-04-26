@@ -66,3 +66,12 @@
 // }
 // return result
 // }
+
+// // 8
+function sortBy(a, fn) {
+    let arr=[]
+    for (let i=0;i<a.length;i++){
+        arr.push(fn(a[i]))}
+    return arr.sort()
+};
+console.log(sortBy([5,4,1,2,3], (x) => x))

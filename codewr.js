@@ -770,3 +770,31 @@
 // }
 // console.log(toFreud('cd htr thr'))
 
+// // 64
+// function countBy(x, n) {
+//     let z = [];
+//     for(let i=1 ;i<=n; i++){
+//         z.push(i*x)
+//     }
+//     return z;
+// }
+// console.log(countBy(1,10))
+
+// // 65
+// function findOdd(A) {
+//     const sorted = A.sort((a,b)=>b-a)
+//     console.log(sorted)
+//     for(let i=0; i<A.length; i+=2){
+//         if(sorted[i]!==sorted[i+1]) return sorted[i]
+//     }
+// }
+// console.log(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]))
+
+// // 66
+// function gimme (triplet) {
+//     const avg = [...triplet].sort((a,b)=>a-b)[1]
+//     for(let i=0; i<3; i++){
+//         if(triplet[i]===avg) return i
+//     }
+// }
+// console.log(gimme([2, 3, 1]))
