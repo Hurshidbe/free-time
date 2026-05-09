@@ -798,3 +798,30 @@
 //     }
 // }
 // console.log(gimme([2, 3, 1]))
+
+// // 67
+// function bouncingBall(h,  bounce,  window) {
+//   let count =0
+//   if(bounce>=1 ||h<window) return -1
+//   if(h===window) return 1
+//   if(h>window) count++
+//   while(h*bounce>window) {
+//     count+=2
+//     h=h*bounce
+// } 
+// return count
+// }
+// console.log(bouncingBall(10,0.6,10))
+
+// // 68
+// function XO(str) {
+//     let x = 0
+//     let o = 0
+//     const lowerStr = str.toLowerCase().split('')
+//     for(let i=0 ; i<lowerStr.length;i++){
+//         if(lowerStr[i]==='o') o=o+1
+//         if(lowerStr[i]==='x') x=x+1
+//     }
+//     return x === o
+// }
+// console.log(XO('xxxm'))

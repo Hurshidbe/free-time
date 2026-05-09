@@ -68,10 +68,60 @@
 // }
 
 // // 8
-function sortBy(a, fn) {
-    let arr=[]
-    for (let i=0;i<a.length;i++){
-        arr.push(fn(a[i]))}
-    return arr.sort()
-};
-console.log(sortBy([5,4,1,2,3], (x) => x))
+// function sortBy(a, fn) {
+//     let arr=[]
+//     for (let i=0;i<a.length;i++){
+//         arr.push(fn(a[i]))}
+//     return arr.sort()
+// };
+// console.log(sortBy([5,4,1,2,3], (x) => x))
+
+// // 9
+// const mergeTwoLists = function(list1, list2) {
+//     const merged = [...list1, ...list2]
+//     return merged.sort((a,b)=>a-b)
+// };
+
+// console.log(mergeTwoLists([1,2,3,4],[1,2,3,5,6,7,8]))
+
+// // 10
+// function romanToInt(s){
+//     const n =[1,5,10,50,100,500,1000]
+//     const r =['I','V','X','L','C','D','M']
+//     const s_arr = s.split('')
+//     let s_arr_num = []
+//     for(let i = 0; i < s_arr.length; i++){
+//         const letter = s_arr[i]
+
+//         for(let j = 0; j < r.length; j++){
+//             if(letter === r[j]){
+//                 s_arr_num.push(n[j])
+//             }
+//         }
+//     }
+//     let result = 0
+//     for(let i = 0; i < s_arr_num.length; i++){
+//         if(s_arr_num[i] < s_arr_num[i + 1]){
+//             result -= s_arr_num[i]
+//         } else {
+//             result += s_arr_num[i]
+//         }
+//     }
+//     return result
+// }
+// console.log(romanToInt("MCMXCIV"))
+
+// 11
+var longestCommonPrefix = function(strs) {
+  const result = []
+  const first_word = strs[0].split('')
+  for (let j = 0; j < first_word.length; j++) {
+    for (let i = 1; i < strs.length; i++) {
+      if (strs[i][j] !== first_word[j]) {
+        return result.join('')
+      }
+    }
+    result.push(first_word[j])
+  }
+  return result.join('')
+}
